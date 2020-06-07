@@ -1,0 +1,24 @@
+// Colors - Palette
+$c-sky-blue: hsl(203, 100%, 60%); // #34b1ff
+$c-navy: hsl(210, 29%, 24%); // #2c3e50
+$c-light-gray: hsl(216, 14%, 93%); // #eaecef
+
+// Colors - Common Uses
+$c-primary: $c-sky-blue;
+$c-border: $c-light-gray;
+$c-nav-link: $c-navy;
+
+// Responsive
+@mixin breakpoint($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+// Responsive - Breakpoints
+$bk-navbar: 600px;
+
+// Typography
+$ff-sans: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, sans-serif;
+$ff-serif: 'PT Serif', serif;
