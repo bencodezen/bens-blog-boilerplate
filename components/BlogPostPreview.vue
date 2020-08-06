@@ -41,6 +41,7 @@ $primary-color: #22aaff;
 
 .blog-post {
   margin-bottom: 2.5rem;
+  box-shadow: 5px 5px 5px 5px;
 }
 
 .blog-post__button {

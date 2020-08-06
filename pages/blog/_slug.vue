@@ -50,7 +50,7 @@ export default {
 .content {
   @apply mx-auto;
   @apply px-8;
-  max-width: 740px;
+  max-width: 1000px;
 }
 
 .nuxt-content {
@@ -65,7 +65,6 @@ export default {
     line-height: 1.3;
   }
 
-  p,
   li {
     line-height: 1.7;
     font-size: 16px;
@@ -82,6 +81,7 @@ export default {
 
   ul,
   ol {
+    list-style-position: outside;
     @apply list-decimal;
     @apply list-inside;
     @apply mb-4;

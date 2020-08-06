@@ -1,26 +1,6 @@
-<script>
-import SocialMediaBar from './SocialMediaBar'
-
-export default {
-  components: {
-    SocialMediaBar
-  },
-  computed: {
-    currentYear() {
-      const today = new Date()
-      return today.getFullYear()
-    }
-  }
-}
-</script>
-
 <template>
   <footer class="footer">
-    <SocialMediaBar />
-    <p class="text-center">
-      © YOUR BRAND HERE {{ currentYear }}. Made with
-      <a href="https://www.nuxtjs.org">NuxtJS</a> 💚.
-    </p>
+    <p>Chris Yoon</p>
   </footer>
 </template>
 

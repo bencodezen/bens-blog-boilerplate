@@ -15,13 +15,12 @@ export default {}
           src="~/assets/avatar.png"
           alt="Your Logo"
         />
-        YOUR BRAND HERE
+        Chris Yoon
       </nuxt-link>
     </div>
     <div class="navbar-item-wrapper">
       <nuxt-link to="/" class="navbar-item">Home</nuxt-link>
-      <nuxt-link to="/blog" class="navbar-item">Blog</nuxt-link>
-      <nuxt-link to="/uses" class="navbar-item">Uses</nuxt-link>
+      <nuxt-link to="/about" class="navbar-item">About</nuxt-link>
     </div>
   </nav>
 </template>
@@ -31,9 +30,13 @@ export default {}
 
 .navbar {
   @apply py-3 px-5;
-  border-bottom: 2px solid $c-border;
+  // border-bottom: 2px solid $c-border;
   color: $c-nav-link;
   font-family: $ff-sans;
+
+  // &:hover {
+  //   border-bottom: 2px solid $c-primary;
+  // }
 
   @include breakpoint($bk-navbar) {
     @apply flex justify-between items-center;
@@ -42,7 +45,7 @@ export default {}
 
 .navbar-item {
   @apply mr-5;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   @apply font-medium;
 
   &:last-child {
@@ -56,6 +59,8 @@ export default {}
 
 .navbar-item-wrapper {
   @apply text-center;
+  padding-top: 0.5em;
+  padding-right: 1em;
 }
 
 .navbar-logo {
