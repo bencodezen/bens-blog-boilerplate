@@ -1,7 +1,5 @@
 <template>
-  <footer class="footer">
-    <p>Chris Yoon</p>
-  </footer>
+  <footer class="footer"></footer>
 </template>
 
 <style lang="scss">
@@ -10,7 +8,7 @@
 .footer {
   @apply text-center;
   font-family: $ff-serif;
-  @apply text-lg;
+  @apply text-sm;
   @apply mt-12;
   @apply p-8;
   border-top: 2px solid $c-border;

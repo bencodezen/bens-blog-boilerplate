@@ -10,11 +10,6 @@ export default {}
         class="navbar-logo"
         exact-active-class="no-active-style"
       >
-        <img
-          class="navbar-logo-image"
-          src="~/assets/avatar.png"
-          alt="Your Logo"
-        />
         Chris Yoon
       </nuxt-link>
     </div>
@@ -60,7 +55,6 @@ export default {}
 .navbar-item-wrapper {
   @apply text-center;
   padding-top: 0.5em;
-  padding-right: 1em;
 }
 
 .navbar-logo {
@@ -68,6 +62,11 @@ export default {}
   @apply mx-auto mb-3;
   font-size: 1.3rem;
   @apply font-semibold;
+  padding-top: 0.5em;
+
+  &:hover {
+    color: $c-primary;
+  }
 
   @include breakpoint($bk-navbar) {
     @apply mb-0;

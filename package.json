@@ -1,8 +1,8 @@
 {
-  "name": "bencodezen",
+  "name": "ChrisYoon",
   "version": "1.0.0",
-  "description": "My website",
-  "author": "Ben Hong",
+  "description": "Blog",
+  "author": "Chris Yoon",
   "license": "MIT",
   "private": true,
   "scripts": {

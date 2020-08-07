@@ -27,6 +27,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 *,
@@ -39,6 +40,6 @@ html {
 .content {
   @apply mx-auto;
   @apply px-8;
-  max-width: 740px;
+  max-width: 640px;
 }
 </style>
