@@ -1,10 +1,14 @@
 <script>
+// import PostPreviewCard from '~/components/PostPreviewCard'
+// import BlogPostPreviewCard from '~/components/BlogPostPreviewCard'
 import BlogPostPreview from '~/components/BlogPostPreview'
 
 export default {
   name: 'BlogPostList',
   components: {
+    // PostPreviewCard,
     BlogPostPreview
+    // BlogPostPreviewCard
   },
   props: {
     list: {
