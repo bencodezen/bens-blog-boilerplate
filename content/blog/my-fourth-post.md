@@ -1,7 +1,7 @@
 ---
-title: My Fourth Post
-date: 2020-05-25T21:50:21
-excerpt: Cupcake ipsum dolor sit amet gingerbread. Sweet sweet roll tart gummies cake caramels. Apple pie muffin apple pie bear claw sugar plum. Toffee cake I love cake. I love icing muffin. Sesame snaps tootsie roll bear claw macaroon brownie. I love wafer sweet tiramisu. Lollipop muffin lollipop sweet roll brownie pie caramels pie dragée. Wafer I love brownie sweet roll. Cookie tootsie roll bonbon marzipan croissant jelly gummi bears. Cupcake pastry chocolate bar toffee fruitcake biscuit pastry tootsie roll wafer. Ice cream sesame snaps gummi bears lollipop caramels. Brownie tootsie roll cotton candy
+title: Sample Complexity Bounds for Reinforcement Learning
+datePublished: August 9, 2020
+abstract: Cupcake ipsum dolor sit amet gingerbread. Sweet sweet roll tart gummies cake caramels. Apple pie muffin apple pie bear claw sugar plum. Toffee cake I love cake. I love icing muffin. Sesame snaps tootsie roll bear claw macaroon brownie. I love wafer sweet tiramisu.
 ---
 
 Cupcake ipsum dolor sit amet gingerbread. Sweet sweet roll tart gummies cake caramels. Apple pie muffin apple pie bear claw sugar plum. Toffee cake I love cake. I love icing muffin. Sesame snaps tootsie roll bear claw macaroon brownie. I love wafer sweet tiramisu. Lollipop muffin lollipop sweet roll brownie pie caramels pie dragée. Wafer I love brownie sweet roll. Cookie tootsie roll bonbon marzipan croissant jelly gummi bears. Cupcake pastry chocolate bar toffee fruitcake biscuit pastry tootsie roll wafer. Ice cream sesame snaps gummi bears lollipop caramels. Brownie tootsie roll cotton candy.
