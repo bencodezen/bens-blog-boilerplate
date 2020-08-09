@@ -15,26 +15,33 @@ export default {
     <h1>Spotlight</h1>
     <PostPreviewCard
       imagePath="placeholder_thumbnail.png"
-      title="RL Newsletter 1: On the Sample Complexity of Reinforcment Learning"
-      preview="Lorem ipsum dolor sit"
+      title="RL Newsletter 1: Sample Complexity Bounds for Reinforcement Learning"
+      datePublished="Published on August 9, 2020"
+      preview="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..."
       linkTo="/blog"
     />
     <h1>Sections</h1>
     <div id="catbox" class="flex flex-wrap items-center">
       <div id="col1" class="w-1/3 px-1 py-1 ml-auto">
-        <CategoryCard
-          title="RL Newsletter"
-          description="Review of recent publications in Reinforcement Learning"
-        />
+        <nuxt-link to="/rl_newsletter">
+          <CategoryCard
+            title="RL Newsletter"
+            description="Review of recent publications in Reinforcement Learning"
+          />
+        </nuxt-link>
       </div>
       <div id="col2" class="w-1/3 px-1 py-1">
-        <CategoryCard
-          title="Slow Papers"
-          description="In-depth review of foundational (and) or interesting papers"
-        />
+        <nuxt-link to="/slow_papers">
+          <CategoryCard
+            title="Slow Papers"
+            description="In-depth review of foundational (and) or interesting papers"
+          />
+        </nuxt-link>
       </div>
       <div id="col3" class="w-1/3 px-1 py-1 mr-auto">
-        <CategoryCard title="Blog" description="Personal Blog" />
+        <nuxt-link to="/blog">
+          <CategoryCard title="Blog" description="Personal Blog" />
+        </nuxt-link>
       </div>
     </div>
     <div id="allpost">
@@ -53,6 +60,7 @@ h1 {
   font-size: 2rem;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
+  color: $c-nav-link;
 }
 
 #allpost {

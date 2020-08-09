@@ -11,17 +11,22 @@ export default {
 </script>
 
 <template>
-  <article class="container mx-auto content pt-10">
-    <nuxt-content :document="page" />
+  <article class="flex mx-auto pt-10">
+    <nuxt-content class="mx-auto w-2/3" :document="page" />
   </article>
 </template>
 
 <style lang="scss">
 @import '../../styles/_settings.scss';
 
+.article {
+  align-content: center;
+  width: 100%;
+}
+
 .nuxt-content {
   a {
-    color: $c-primary;
+    color: #e36f26;
 
     &:hover {
       text-decoration: underline;
