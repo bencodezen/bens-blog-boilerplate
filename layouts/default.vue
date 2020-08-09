@@ -28,6 +28,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   overflow-y: scroll;
+  background-color: #f5f5f5;
 }
 
 *,
