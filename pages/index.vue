@@ -12,15 +12,15 @@ export default {
 
 <template>
   <div class="container mx-auto px-32 text-center">
-    <h1>Spotlight</h1>
+    <h1><span id="spotlight">Spotlight</span></h1>
     <PostPreviewCard
       imagePath="placeholder_thumbnail.png"
       title="RL Newsletter 1: Sample Complexity Bounds for Reinforcement Learning"
       datePublished="Published on August 9, 2020"
       preview="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..."
-      linkTo="/blog"
+      linkTo="/rl_newsletter/newsletter1"
     />
-    <h1>Sections</h1>
+    <h1><span id="sections">Sections</span></h1>
     <div id="catbox" class="flex flex-wrap items-center">
       <div id="col1" class="w-1/3 px-1 py-1 ml-auto">
         <nuxt-link to="/rl_newsletter">
@@ -59,8 +59,20 @@ h1 {
   font-family: $ff-sans;
   font-size: 2rem;
   padding-top: 1.2em;
-  padding-bottom: 1.2em;
+  padding-bottom: 0.3em;
   color: $c-nav-link;
+  border-bottom: 2px solid $c-border;
+  margin-bottom: 0.8em;
+
+  span {
+    border-bottom: 4px solid $c-primary;
+    padding-bottom: 0.2em;
+  }
+}
+
+#spotlight {
+  border-bottom: 4px solid #e36f26;
+  padding-bottom: 0.2em;
 }
 
 #allpost {
