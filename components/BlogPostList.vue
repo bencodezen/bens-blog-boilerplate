@@ -32,17 +32,7 @@ export default {
         if (props.list && props.list.length > 0) {
           return props.list
             .filter((item) => {
-              const isBlogPost = item.path.includes('/blog/')
-              const isReadyToPublish = new Date(item.date) <= new Date()
-              const hasTags = item.tags && item.tags.includes(this.selectedTag)
-
-              const shouldPublish = this.selectedTag
-                ? isBlogPost && isReadyToPublish && hasTags
-                : isBlogPost && isReadyToPublish
-
-              if (shouldPublish) {
-                return item
-              }
+              return item
             })
             .sort((a, b) => new Date(b.date) - new Date(a.date))
         }
@@ -64,12 +54,6 @@ export default {
 
 <template>
   <div class="blog-list__container">
-    <div class="blog-list__header">
-      <h1 class="blog-list-title">Blog Posts</h1>
-    </div>
-
-    <h2 class="blog-list-subtitle">Most Recent</h2>
-
     <ul class="blog-list">
       <li
         v-for="(item, index) in filteredList"

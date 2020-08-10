@@ -16,7 +16,10 @@ export default {
       class="border-2 w-full lg:max-w-full lg:flex object-center text-left shadow-lg hover:shadow bg-white"
     >
       <div class="mb-6 mx-6 justify-center object-center">
-        <div class="text-gray-900 font-bold text-2xl mb-2 text-center my-4">
+        <div
+          id="title"
+          class="text-gray-900 font-bold text-2xl mb-2 text-center my-4"
+        >
           {{ post.title }}
         </div>
         <p class="text-gray-700 text-center italic">
@@ -32,3 +35,9 @@ export default {
     </div>
   </nuxt-link>
 </template>
+
+<style lang="scss">
+#title {
+  font-family: 'Roboto';
+}
+</style>
