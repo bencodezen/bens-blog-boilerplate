@@ -1,11 +1,11 @@
 <script>
 import CategoryCard from '@/components/CategoryCard.vue'
-import PostPreviewCard from '@/components/PostPreviewCard.vue'
+// import PostPreviewCard from '@/components/PostPreviewCard.vue'
 
 export default {
   components: {
-    CategoryCard,
-    PostPreviewCard
+    CategoryCard
+    // PostPreviewCard
   }
 }
 </script>
@@ -13,13 +13,14 @@ export default {
 <template>
   <div class="container mx-auto px-32 text-center">
     <h1><span id="spotlight">Spotlight</span></h1>
-    <PostPreviewCard
+    <!-- <PostPreviewCard
       imagePath="placeholder_thumbnail.png"
       title="RL Newsletter 1: Sample Complexity Bounds for Reinforcement Learning"
       datePublished="Published on August 9, 2020"
       preview="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..."
       linkTo="/rl_newsletter/newsletter1"
-    />
+    /> -->
+    <p class="text-gray-600 text-left text-3xl">Coming Soon!</p>
     <h1><span id="sections">Sections</span></h1>
     <div id="catbox" class="flex flex-wrap items-center">
       <div id="col1" class="w-1/3 px-1 py-1 ml-auto">

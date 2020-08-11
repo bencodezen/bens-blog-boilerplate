@@ -16,8 +16,8 @@ export default {
 </script>
 
 <template>
-  <div class="content">
-    <h1>RL Newsletters</h1>
+  <div class="content text-center">
+    <h1>My Blog</h1>
     <BlogPostList :list="posts" />
   </div>
 </template>

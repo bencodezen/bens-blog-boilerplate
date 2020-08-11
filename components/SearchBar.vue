@@ -23,18 +23,22 @@ export default {
 
 <template>
   <div>
-    <input
-      v-model="searchQuery"
-      type="search"
-      autocomplete="off"
-      placeholder="Search Articles"
-    />
-    <ul v-if="articles.length">
-      <li v-for="article of articles" :key="article.slug">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-          {{ article.title }}
-        </NuxtLink>
-      </li>
-    </ul>
+    <div class="pt-2 relative mx-auto text-gray-600">
+      <input
+        v-model="searchQuery"
+        autocomplete="off"
+        class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm"
+        type="text"
+        name="search"
+        placeholder="Search Keyword"
+      />
+      <ul v-if="articles.length">
+        <li v-for="article of articles" :key="article.slug">
+          <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+            {{ article.title }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
