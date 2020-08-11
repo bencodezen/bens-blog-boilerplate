@@ -1,5 +1,9 @@
 export default {
   mode: 'universal',
+  target: 'static',
+  router: {
+    base: '/cyoon1729.github.io/'
+  },
   /*
    ** Headers of the page
    */
