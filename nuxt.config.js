@@ -1,9 +1,6 @@
 export default {
   mode: 'universal',
   target: 'static',
-  router: {
-    base: '/cyoon1729.github.io/dist'
-  },
   /*
    ** Headers of the page
    */
