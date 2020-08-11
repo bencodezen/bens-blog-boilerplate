@@ -14,9 +14,9 @@ export default {
   <nuxt-link :to="post.path">
     <div
       id="previewcard"
-      class="border-2 w-full lg:max-w-full lg:flex object-center text-left shadow-lg hover:shadow bg-white my-4"
+      class="border-2 w-full lg:max-w-full lg:flex object-center text-left shadow-lg hover:shadow bg-white my-2"
     >
-      <div class="mb-6 mx-6 flex flex-wrap">
+      <div class="mb-2 mx-6 flex flex-wrap">
         <div
           class="blog-post__title w-full text-gray-900 font-bold text-2xl mb-2 text-center"
         >

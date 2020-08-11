@@ -46,8 +46,8 @@ export default {
           {{ datePublished }}
         </p>
         <div class="my-8 w-full flex flex-row">
-          <img class="object-contain h-36 w-1/3" :src="imagePath" />
-          <p class="text-gray-700 text-base w-2/3">
+          <img class="object-contain h-36 w-1/3 sm:w-full" :src="imagePath" />
+          <p class="text-gray-700 text-base w-2/3 sm:w-full">
             {{ preview }}
           </p>
         </div>

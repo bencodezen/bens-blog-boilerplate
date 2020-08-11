@@ -5,18 +5,6 @@ export default {
     return {
       page
     }
-  },
-  computed: {
-    formatPublishDate() {
-      const dateFormat = new Date(this.page.date)
-      const options = {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      }
-
-      return dateFormat.toLocaleDateString('en-US', options)
-    }
   }
 }
 </script>
@@ -24,8 +12,10 @@ export default {
 <template>
   <main>
     <article class="content">
-      <p class="blog-publish-date">{{ formatPublishDate }}</p>
       <h1 class="blog-title">{{ page.title }}</h1>
+      <h3 class="text-gray-600 mt-4 mb-8 text-italics">
+        {{ page.datePublished }}
+      </h3>
       <nuxt-content :document="page" />
     </article>
   </main>
@@ -34,17 +24,12 @@ export default {
 <style lang="scss">
 @import '../../styles/_settings.scss';
 
-.blog-publish-date {
-  @apply mt-12;
-  font-family: $ff-sans;
-}
-
 .blog-title {
   font-family: $ff-sans;
   color: $c-navy;
   @apply font-bold;
-  @apply text-5xl;
-  @apply mb-4;
+  @apply text-3xl;
+  @apply mt-8;
 }
 
 .content {
@@ -61,8 +46,8 @@ export default {
     @apply mt-5 mb-5;
     @apply pb-3;
     border-bottom: 1px solid $c-border;
-    @apply text-4xl;
-    line-height: 1.3;
+    @apply text-xl;
+    line-height: 0.5;
   }
 
   li {

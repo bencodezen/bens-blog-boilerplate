@@ -23,25 +23,31 @@ export default {
     <p class="text-gray-600 text-left text-3xl">Coming Soon!</p>
     <h1><span id="sections">Sections</span></h1>
     <div id="catbox" class="flex flex-wrap items-center">
-      <div id="col1" class="w-1/3 px-1 py-1 ml-auto">
+      <div id="col1" class="w-full lg:w-1/3 py-1 ml-auto">
         <nuxt-link to="/rl_newsletter">
           <CategoryCard
+            class="mx-auto"
             title="RL Newsletter"
             description="Review of recent publications in Reinforcement Learning"
           />
         </nuxt-link>
       </div>
-      <div id="col2" class="w-1/3 px-1 py-1">
+      <div id="col2" class="w-full lg:w-1/3 py-1">
         <nuxt-link to="/slow_papers">
           <CategoryCard
+            class="mx-auto"
             title="Slow Papers"
             description="In-depth review of foundational (and) or interesting papers"
           />
         </nuxt-link>
       </div>
-      <div id="col3" class="w-1/3 px-1 py-1 mr-auto">
+      <div id="col3" class="w-full lg:w-1/3 py-1 mr-auto">
         <nuxt-link to="/blog">
-          <CategoryCard title="Blog" description="Personal Blog" />
+          <CategoryCard
+            class="mx-auto"
+            title="Blog"
+            description="Personal Blog"
+          />
         </nuxt-link>
       </div>
     </div>

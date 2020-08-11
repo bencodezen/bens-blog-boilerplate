@@ -24,8 +24,11 @@ export default {
 <template>
   <main>
     <article class="content">
-      <p class="blog-publish-date">{{ formatPublishDate }}</p>
+      <h1 id="category" class="text-base">{{ page.category }}</h1>
       <h1 class="blog-title">{{ page.title }}</h1>
+      <h3 class="text-gray-600 mt-4 mb-8 text-italics">
+        {{ page.datePublished }}
+      </h3>
       <nuxt-content :document="page" />
     </article>
   </main>
@@ -34,17 +37,20 @@ export default {
 <style lang="scss">
 @import '../../styles/_settings.scss';
 
-.blog-publish-date {
-  @apply mt-12;
+#category {
+  color: $c-primary;
   font-family: $ff-sans;
+  @apply font-bold;
+  @apply text-5xl;
+  @apply mb-4;
 }
 
 .blog-title {
   font-family: $ff-sans;
   color: $c-navy;
   @apply font-bold;
-  @apply text-5xl;
-  @apply mb-4;
+  @apply text-3xl;
+  @apply mt-8;
 }
 
 .content {
