@@ -81,4 +81,11 @@ export default {
     @apply mb-4;
   }
 }
+
+.katex .mfrac .frac-line {
+  display: inline-block;
+  width: 100%;
+  border-bottom-style: solid;
+  border-color: #000;
+}
 </style>

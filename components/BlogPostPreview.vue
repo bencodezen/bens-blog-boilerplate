@@ -26,7 +26,7 @@ export default {
           {{ post.datePublished }}
         </time>
         <div class="my-8 w-full flex flex-row">
-          <img class="object-contain h-36 w-1/3" :src="ImagePath" />
+          <img class="object-contain h-36 w-1/3" :src="post.ImagePath" />
           <p
             v-if="post.abstract"
             class="blog-post__abstract text-gray-700 text-base mx-2 w-2/3"
