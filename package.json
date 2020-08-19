@@ -27,7 +27,9 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.0.0",
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "rehype-katex": "^3.1.0",
+    "remark-math": "^2.0.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
