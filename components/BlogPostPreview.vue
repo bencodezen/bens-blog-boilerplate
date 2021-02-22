@@ -9,7 +9,7 @@ export default {
   },
   computed: {
     formatPublishDate() {
-      const dateFormat = new Date(this.post.published)
+      const dateFormat = new Date(this.post.date)
       const options = {
         year: 'numeric',
         month: 'long',
